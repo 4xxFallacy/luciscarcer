@@ -1,4 +1,8 @@
-@import "https://use.typekit.net/ypl2djw.css";
+@import url("https://use.typekit.net/ypl2djw.css");
+:root {
+  font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -65,6 +69,7 @@ header ul a {
   text-decoration: none;
   color: inherit;
   opacity: 0.2;
+  font-size: 1rem;
   transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -72,14 +77,8 @@ header ul a:hover {
   opacity: 1;
 }
 
-header .logo {
-  font-family: "itc-simbach", serif;
-  text-decoration: none;
-  font-weight: 100;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  color: inherit;
-  transition: all 0.6s cubic-bezier(0.5, -0.5, 0.5, 1.5);
+header .logo img {
+  height: 75%;
 }
 
 header .logo:hover {
@@ -108,14 +107,14 @@ main section {
 }
 
 #intro {
-  font-family: "itc-simbach", serif;
+  font-family: "neue-haas-grotesk-text", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: inherit;
   text-decoration: none;
-  font-weight: 100;
-  font-size: 4vh;
+  font-weight: 400;
+  font-size: 8vh;
   line-height: 1.2em;
-  letter-spacing: 0.5em;
-  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  text-transform: lowercase;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,7 +126,14 @@ main section {
 }
 
 strong {
-  font-weight: 900;
+  font-family: "itc-slimbach", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.11em;
+}
+
+#screams #scream-container #contatti #contatti-container #about #about-container {
+  width: 100%;
 }
 
 #screams ul {
@@ -140,13 +146,15 @@ strong {
 }
 
 #screams ul a {
-  font-family: "itc-simbach", serif;
+  font-family: "itc-slimbach", serif;
   color: inherit;
   text-decoration: none;
-  font-weight: 900;
+  font-style: italic;
+  font-weight: 400;
   font-size: 13vh;
   line-height: 0.8em;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  letter-spacing: -0.025em;
   transition: all 0.6s cubic-bezier(0.5, -0.5, 0.5, 1.5);
 }
 
@@ -159,12 +167,22 @@ strong {
   width: 100%;
 }
 
-#screams #scream-container {
-  width: 100%;
-}
-
 #screams {
   transition: all 0.6s cubic-bezier(0.8, -0.5, 0.25, 1.5);
+}
+
+#about h1 {
+  font-family: "itc-slimbach", serif;
+  font-size: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+#about p {
+  max-width: 70ch;
 }
 
 footer {
@@ -173,5 +191,5 @@ footer {
   font-size: 0.75rem;
   align-items: center;
   justify-content: center;
-  opacity: 0.1;
+  opacity: 0.2;
 }/*# sourceMappingURL=main.css.map */

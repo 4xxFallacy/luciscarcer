@@ -1,3 +1,7 @@
+:root
+	font-size: 16px
+
+
 *
 	margin: 0
 	padding: 0
@@ -63,19 +67,14 @@ header ul a
 	text-decoration: none
 	color: inherit
 	opacity: .2
+	font-size: $text-size-m
 	transition: all .6s cubic-bezier(0.25, 1, 0.5, 1)
 
 header ul a:hover
 	opacity: 1
 
-header .logo
-	font-family:$font-display
-	text-decoration: none
-	font-weight: $weight-light
-	text-transform: uppercase
-	letter-spacing: .2rem
-	color: inherit
-	transition: all .6s cubic-bezier(.5,-0.5,.5,1.5)
+header .logo img
+	height: 75%
 
 header .logo:hover
 	letter-spacing: .5rem
@@ -101,14 +100,14 @@ main section
 	padding: 0 $space-xxl
 
 #intro
-	font-family:$font-display
+	font-family:$font-text
 	color: inherit
 	text-decoration: none
-	font-weight:$weight-light
-	font-size: 4vh
+	font-weight:$weight-regular
+	font-size: 8vh
 	line-height: 1.2em
-	letter-spacing: .5em
-	text-transform: uppercase
+	letter-spacing: -.025em
+	text-transform: lowercase
 	display: flex
 	align-items: center
 	justify-content: center
@@ -118,9 +117,15 @@ main section
 	text-align: center
 
 strong
-	font-weight:$weight-bold
+	font-family:$font-display
+	font-weight:$weight-regular
+	font-style: italic
+	font-size: 1.11em
 
+#screams #scream-container #contatti #contatti-container #about #about-container
+	width: 100%
 
+//WORK
 #screams ul
 	list-style: none
 	padding: 0
@@ -133,10 +138,12 @@ strong
 	font-family:$font-display
 	color: inherit
 	text-decoration: none
-	font-weight:$weight-bold
+	font-style: italic
+	font-weight:$weight-regular
 	font-size: 13vh
 	line-height: 0.8em
-	text-transform: uppercase
+	text-transform: lowercase
+	letter-spacing: -.025em
 	transition: all .6s cubic-bezier(.5,-0.5,.5,1.5)
 
 #screams ul a:hover
@@ -146,15 +153,25 @@ strong
 #screams img
 	width: 100%
 
-#screams #scream-container
-	width: 100%
-
 #screams
 	transition: all .6s cubic-bezier(0.8, -0.5, 0.25, 1.5)
 
 #screams:has(> ul li a:hover)
 	
-	
+//ABOUT
+
+#about h1
+	font-family:$font-display
+	font-size: $text-size-l
+	color: inherit
+	text-decoration: none
+	font-style: italic
+	font-weight:$weight-semibold
+	margin-bottom: 1em
+
+#about p
+	max-width: 70ch
+
 
 //FOOTER
 
@@ -164,6 +181,6 @@ footer
 	font-size: $text-size-s
 	align-items: center
 	justify-content: center
-	opacity: 0.1
+	opacity: 0.2
 
 	
